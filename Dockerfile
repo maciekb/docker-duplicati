@@ -29,4 +29,4 @@ COPY root/ /
 
 # ports and volumes
 EXPOSE 8200
-VOLUME /backups /config /source
+VOLUME /data /config
