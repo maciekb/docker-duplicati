@@ -23,7 +23,7 @@ RUN \
  echo "**** install docker ****" && \
  apt-get update && \
  apt-get install --quiet --yes --no-install-recommends \
-	docker.io
+	docker.io && \
  echo "**** cleanup ****" && \
  rm -rf \
 	/tmp/*
