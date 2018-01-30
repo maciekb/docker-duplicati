@@ -20,6 +20,10 @@ RUN \
  /tmp/duplicati.zip -L \
 	"https://github.com/duplicati/duplicati/releases/download/${duplicati_tag}/${duplicati_zip}" && \
  unzip -q /tmp/duplicati.zip -d /app/duplicati && \
+ echo "**** install docker ****" && \
+ apt-get update && \
+ apt-get install --quiet --yes --no-install-recommends \
+	docker.io
  echo "**** cleanup ****" && \
  rm -rf \
 	/tmp/*

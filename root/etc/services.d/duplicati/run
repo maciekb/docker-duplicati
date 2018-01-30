@@ -3,5 +3,5 @@
 cd /app/duplicati || exit
 
  exec \
-	s6-setuidgid abc mono Duplicati.Server.exe \
+	s6-setuidgid root mono Duplicati.Server.exe \
 	--webservice-interface=any --server-datafolder=/config

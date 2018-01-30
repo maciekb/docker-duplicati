@@ -1,4 +1,4 @@
 #!/usr/bin/with-contenv bash
 
-chmod o+rw /var/run/docker.sock
-apt-get update && apt-get install --quiet --yes --no-install-recommends docker.io
+#chmod o+rw /var/run/docker.sock
+#apt-get update && apt-get install --quiet --yes --no-install-recommends docker.io
