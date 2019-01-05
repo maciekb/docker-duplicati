@@ -24,11 +24,14 @@ RUN \
  apt-get update && \
  apt-get install --quiet --yes --no-install-recommends \
 	docker.io man-db && \
- echo "**** cleanup ****" && \
- rm -rf /tmp/* && \
  echo "**** install latest rclone beta ****" && \
- curl https://rclone.org/install.sh | bash -s beta
-
+ curl https://rclone.org/install.sh | bash -s beta && \
+ echo "**** cleanup ****" && \
+ rm -rf \
+	/tmp/* \
+	/var/lib/apt/lists/* \
+	/var/tmp/*
+ 
 # copy local files
 COPY root/ /
 
