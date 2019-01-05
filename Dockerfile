@@ -1,10 +1,10 @@
-FROM lsiobase/mono
+FROM lsiobase/mono:xenial
 
 # set version label
 ARG BUILD_DATE
 ARG VERSION
-LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="sparklyballs"
+LABEL build_version="Version:- ${VERSION} Build-date:- ${BUILD_DATE}"
+LABEL maintainer="maciekb"
 
 # environment settings
 ENV HOME="/config"
