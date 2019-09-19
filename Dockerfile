@@ -25,7 +25,7 @@ RUN \
  /tmp/duplicati_client.zip -L \
 	"https://github.com/Pectojin/duplicati-client/releases/download/0.4.21_beta/duplicati_client_0.4.21_gnu_linux.zip" && \
  unzip -q /tmp/duplicati_client.zip -d /app && \
- ln -s /app/duplicati_client_0.4.21_gnu_linux/duplicati_client /usr/bin/duc
+ ln -s /app/duplicati_client_0.4.21_gnu_linux/duplicati_client /usr/bin/duc && \
  echo "**** install docker ****" && \
  apt-get update && \
  apt-get install --quiet --yes --no-install-recommends \
